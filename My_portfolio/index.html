@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <title>Amit-Kumar</title>
+
+    <!-- css -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(231, 228, 234);
+        font-family: "Poppins", sans-serif;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 85px;
+        background-color: #79caed;
+      }
+      nav ul {
+        display: flex;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 30px;
+        font-weight: 600;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+      }
+      nav ul li a:hover {
+        color: black;
+        background-color: rgb(148, 219, 222);
+        border: 1px solid bisque;
+        border-radius: 5px;
+        padding: 5px;
+        font-size: 1.02rem;
+      }
+      .left {
+        font-size: 2rem;
+        font-weight: bold;
+      }
+      .firstSection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 80px 0;
+      }
+      .firstSection div {
+        width: 30%;
+      }
+      .leftSection {
+        font-size: 2.5rem;
+      }
+
+      .rightSection img {
+        width: 100%;
+        margin: 30px 0;
+      }
+      .name {
+        color: #79caed;
+        font-weight: 600;
+      }
+      #element {
+        color: #195771;
+        font-weight: 600;
+      }
+
+      .hr {
+        border: 1px solid;
+        color: blue;
+        width: 285px;
+        margin: 80px;
+      }
+
+      h1 {
+        color: rgb(6, 121, 83);
+        background-color: cadetblue;
+        text-align: center;
+        padding: 2px;
+        width: 40vh;
+        margin: 30px 20rem;
+        padding: 2px;
+        position: relative;
+        left: 250px;
+        border-radius: 5px;
+      }
+      .skill-box {
+        display: flex;
+        justify-content: center;
+        width: 15vw;
+        height: 42vh;
+        border: 5px solid black;
+        color: rgb(33, 12, 1);
+        margin: 100px 250px;
+        border-radius: 10px;
+        background-color: #44758a;
+        position: relative;
+        left: 350px;
+      }
+
+      .lang {
+        display: flex;
+        position: relative;
+        /* left: 50%; */
+        margin: 10px 50px;
+        text-align: center;
+        background-color: burlywood;
+        border: 2px solid rgb(89, 87, 87);
+        border-radius: 5px;
+        padding: 5px;
+        font-size: larger;
+        font-weight: 600;
+      }
+
+      footer {
+      
+        /* margin-top: 30px; */
+        background-color: rgb(188, 209, 248);
+        width: 50%;
+        border: 1px solid rgb(13, 13, 13);
+        position: relative;
+        left: 250px;
+      }
+      h2 {
+        display: flex;
+        justify-content: center;
+        width: 40vh;
+        color: rgb(22, 22, 22);
+        background-color: cadetblue;
+        align-items: center;
+        margin: 30px 16rem;
+        padding: 2px;
+        border-radius: 5px;
+      }
+
+      .links{
+        display: flex;
+        justify-content:space-evenly;
+        list-style: none;
+        margin: 10px;
+      }
+
+      .social{
+font-size: 1.5rem;
+border:1px solid red;
+border-radius: 6px;
+padding: 10px 15px;
+background-color: darkcyan;
+color: aliceblue;
+box-shadow: 3px 3px ;
+      }
+/* Media Query */
+      @media screen and (min-width: 375px) and (max-width: 1000px){
+        nav ul{
+          display: none;
+        }
+        .left {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+      .firstSection {
+        display: table-caption;
+       
+        margin: 10px 0;
+      }
+      
+      .firstSection div {
+        width: 100vh;
+      }
+      .leftSection {
+        font-size: 0.5rem;
+      }
+      .skill-box {
+        /* display: flex; */
+        width: 50vw;
+        height: 50vh;
+        border: 5px solid#ebaaaa;
+        color: rgb(33, 12, 1);
+        /* margin: 100px 250px; */
+        /* border-radius: 10px; */
+        background-color: #b2c9d3;
+        position: relative;
+        left:50px;
+      }
+
+      .lang {
+        display: flex;
+        position: relative;
+        /* left: 50%; */
+        margin: 10px 50px;
+        text-align: center;
+        background-color: burlywood;
+        border: 1px solid rgb(89, 87, 87);
+        border-radius: 5px;
+        padding: 2px;
+        font-size:medium;
+        font-weight: 400;
+      }
+      footer {
+      
+      /* margin-top: 30px; */
+      background-color: rgb(188, 209, 248);
+      width: 50%;
+      border: 1px solid rgb(13, 13, 13);
+      position: relative;
+      left: 25rem;
+    }
+      h2 {
+        display: flex;
+        justify-content: center;
+        width: 20vh;
+        color: rgb(22, 22, 22);
+        background-color: cadetblue;
+        align-items: center;
+        margin: 10px 9rem;
+        padding: 2px;
+        border-radius: 5px;
+      }
+
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Amit Kumar</div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          Hi, My name is <span class="name">Amit Kumar</span>
+          <span>and I am</span>
+          <span id="element"></span>
+        </div>
+        <div class="rightSection">
+          <img src="./bg.jpg" alt="" />
+        </div>
+      </section>
+      <div class="hr"></div>
+      <div>
+        <h1>SKILL</h1>
+      </div>
+      <section>
+        <div class="skill-box">
+          <ul>
+            <li class="lang">HTML</li>
+            <li class="lang">CSS</li>
+            <li class="lang">JAVASCRIPT</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <h2>contact us</h2>
+      </div>
+      <div class="links">
+        <li class="social">
+          <i class="fa-brands fa-github"></i>
+          <a href="https://github.com/Amitk4600">Github</a></li>
+        <li class="social">
+          <i class="fa-brands fa-linkedin"></i>
+          <a href="https://www.linkedin.com/in/amit-kumar-7a900a60/">Linkedin</a></li>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- js -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: [" Web Developer."],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
